@@ -1,0 +1,225 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #fafafa;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+canvas {
+  display: block;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #161616;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+a, a:visited {
+  color: #e34234;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+a:hover, a:focus {
+  color: #ba160c;
+}
+
+.titulo-pagina h1 {
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  text-align: center;
+  color: #fafafa;
+}
+
+.form-box {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 13px 0px #000000;
+          box-shadow: 0px 0px 13px 0px #000000;
+}
+
+.form-box .menu-form {
+  position: absolute;
+  top: -41px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-box-shadow: 5px 0px 13px 0px #000000;
+          box-shadow: 5px 0px 13px 0px #000000;
+}
+
+.form-box .menu-form .items {
+  display: inline-block;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.form-box .menu-form i {
+  padding: 5px;
+  font-size: 23pt;
+}
+
+.form-box .menu-form i.login {
+  border-top-left-radius: 10px;
+}
+
+.form-box .menu-form .active {
+  background-color: green;
+}
+
+.form-box .menu-form i.register {
+  border-top-right-radius: 10px;
+}
+
+.form-box .menu-form i:hover {
+  color: #0a4e0a;
+}
+
+.form-box .login-alternative table {
+  width: 100%;
+}
+
+.form-box .login-alternative a {
+  color: #fafafa;
+}
+
+.form-box .login-alternative .google img, .form-box .login-alternative .facebook img {
+  position: relative;
+  top: 2px;
+  width: 40px;
+  float: left;
+  padding-left: 2px;
+}
+
+.form-box .login-alternative .google, .form-box .login-alternative .facebook {
+  position: relative;
+  top: -10px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin-left: 5px;
+}
+
+.form-box .login-alternative .google {
+  background-color: #5086f7;
+  height: 45px;
+}
+
+.form-box .login-alternative .facebook {
+  background-color: #40599a;
+  height: 45px;
+}
+
+.form-box .login-alternative span {
+  position: relative;
+  top: 12px;
+  text-align: center;
+}
+
+.form-box form .titulo {
+  border-top: 1px solid green;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+
+.form-box form .titulo legend {
+  font-size: 14pt;
+  padding: 0px 10px;
+}
+
+.form-box form span {
+  display: block;
+  font-size: 13pt;
+  margin: 10px 0px 2px 0px;
+}
+
+.form-box form #nome, .form-box form #sobrenome, .form-box form #email, .form-box form #senha {
+  width: 100%;
+  height: 43px;
+  padding-left: 5px;
+  border: none;
+}
+
+.form-box form button {
+  padding: 10px;
+  border: 1px solid green;
+  color: #fafafa;
+  margin-top: 10px;
+  background-color: #000000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.form-box form button:hover {
+  background-color: #072507;
+}
+
+.form-box form button:not(:hover) {
+  background-color: #000000;
+}
+
+.form-box form .input-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  display: flex;
+}
+
+.form-box form .input-icons:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0px 0px 10px 7px #161616;
+          box-shadow: 0px 0px 10px 7px #161616;
+}
+
+.form-box form .input-icons i {
+  padding: 9px;
+  background-color: #ffffff;
+  color: #000000;
+  border-right: 1px solid #e2dede;
+}
+
+@media (max-width: 800px) {
+  .titulo-pagina h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .login-alternative a span {
+    top: 15px;
+    font-size: 9pt;
+  }
+  .form-box {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

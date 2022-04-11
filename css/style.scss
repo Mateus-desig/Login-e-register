@@ -1,0 +1,204 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+$color_green: #161616;
+$colorText: #fafafa;
+$colorBlack: #000000;
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: $colorText;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+// Particulas
+canvas{
+    display: block;
+}
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $color_green;
+}
+h1{
+    font-size: 2.25em;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+a, a:visited{
+    color: #e34234;
+    transition: 0.25s;
+}
+a:hover, a:focus{
+    color: #ba160c;
+}
+// Titulo da pagina
+.titulo-pagina{
+    h1{
+        position: absolute;
+        top: 10%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        text-align: center;
+        color: $colorText;
+    }
+}
+// Formulario de login
+.form-box{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 13px 0px $colorBlack;
+
+    
+    .menu-form{
+        position: absolute;
+        top: -41px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 5px 0px 13px 0px $colorBlack;
+    
+
+        .items{
+            display: inline-block;
+            color: $colorText;
+            cursor: pointer;
+        }
+        i{
+            padding: 5px;
+            font-size: 23pt;
+        }
+        i.login{
+            border-top-left-radius: 10px;
+        }
+        .active{
+            background-color: green;
+        }
+        i.register{
+            border-top-right-radius: 10px;
+        }
+        i:hover{
+            color: rgb(10, 78, 10);
+        }
+    }
+    .login-alternative{
+        table{
+            width: 100%;
+        }
+        a{
+            color: $colorText;
+        }
+        .google img, .facebook img{
+            position: relative;
+            top: 2px;
+            width: 40px;
+            float: left;
+            padding-left: 2px;
+        }
+        .google, .facebook{
+            position: relative;
+            top: -10px;
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
+            margin-left: 5px;
+        }
+        .google{
+            background-color: rgb(80,134,247);
+            height: 45px;
+        }
+        .facebook{
+            background-color: rgb(64,89,154);
+            height: 45px;
+        }
+        span{
+            position: relative;
+            top: 12px;
+            text-align: center;
+        }
+    }
+    form{
+        .titulo {
+            border-top: 1px solid green;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            text-align: center;
+        }
+        .titulo legend {
+            font-size: 14pt;
+            padding: 0px 10px;
+        }
+        span{
+            display: block;
+            font-size: 13pt;
+            margin: 10px 0px 2px 0px;
+        }
+        #nome,#sobrenome,#email,#senha{
+            width: 100%;
+            height: 43px;
+            padding-left: 5px;
+            border: none;
+        }
+        button{
+            padding: 10px;
+            border: 1px solid green;
+            color: $colorText;
+            margin-top: 10px;
+            background-color: $colorBlack;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(7, 37, 7);
+        }
+        button:not(:hover){
+            background-color: $colorBlack;
+        }
+        .input-icons {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            transition: all 0.4s;
+            display: flex;
+        }
+        .input-icons:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 0px 10px 7px $color_green;
+        }
+        .input-icons i {
+            padding: 9px;
+            background-color: #ffffff;
+            color: $colorBlack;
+            border-right: 1px solid #e2dede;
+        }
+    }
+}
+// Modo mobile
+@media(max-width: 800px){
+    .titulo-pagina{
+        h1{
+           width: 100%;
+           text-align: center; 
+        }
+        
+    }
+    .login-alternative{
+        a span{
+            top:15px;
+            font-size: 9pt;
+        }
+    }
+    .form-box{
+        width: 90%;
+    }
+}
